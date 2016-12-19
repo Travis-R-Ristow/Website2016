@@ -1,0 +1,18 @@
+html{
+margin: 0;
+background-color: rgb(153,213,255); 
+}
+#back{
+	display: inline-block;
+}
+#back h1{
+	padding: 10px;
+	border: 5px solid black;
+	border-radius: 25px; 
+	background-color: #adad85; 
+	text-decoration: none;
+	color: black;
+}
+img{
+	width: 100%;
+}

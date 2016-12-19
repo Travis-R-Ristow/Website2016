@@ -1,0 +1,355 @@
+html{
+	background-color: #ACD271;
+	padding-bottom: 25px;
+}
+
+body{
+	margin: 0;
+}
+/*	$	SPAN_CLASS	$	*/
+.bold{
+	font-weight: bolder;
+	text-decoration: underline;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+/*	$	SPAN_CLASS ENDs	$	*/
+
+
+/*	$	QconT	$	*/
+#Qcont{
+	background-color: grey;
+	color: white;
+	margin-top: -20px;
+	text-align: right;
+	padding-right: 4%;
+}
+/*	$	QconT ENDs	$	*/
+
+
+/*	$	COVER	$	*/
+#cover{
+	/*display: inline-block;*/
+}
+#cover img{
+	z-index: -1;
+	position: fixed;
+	top: 30px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 60%;
+	/*max-width: 720px;*/
+	border: 3px solid black;
+	border-radius: 15px;
+}
+/*	$	COVER ENDs	$	*/
+
+
+/*	$	NavBar	$	*/
+#navBar{
+	display: inline-block;
+	position: fixed;
+	top: 50px;
+	padding: 20px;
+	border: 3px solid black;
+	border-radius: 0 15px 15px 0;
+	border-left: none;
+	background-color: rgba(153, 213, 255, 0.6);
+}
+#navBar a{
+	display: block;
+	padding: 10px;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: right;
+}
+	#navBar a:hover{
+		color: darkred;
+		font-size: 22px;
+		font-weight: bolder;
+	}
+/*	$	NavBar ENDs	$	*/
+
+
+/*	$	WRAPPER		$	*/
+	#wrapper{
+		box-shadow: 0 -10px 25px #1c270c;
+		margin: auto;
+		/*margin-left: 100px;*/
+		margin-top: 27%;
+		background-color: #63882b;
+		width: 85%;
+		border: 3px solid black;
+		border-radius: 15px;
+		padding-bottom: 10px;
+	}
+
+		/*	$	INTRO		$	*/
+			#intro{
+				margin: 10%;
+				margin-top: 10px;
+				text-align: center;
+			}
+				.badges{
+					padding-left: 10px;
+					padding-right: 10px;
+					display: inline-block;
+					width: 20%;
+					vertical-align: top;
+				}
+				.badges img{
+					/*width: 25%;*/
+					width: 80%;
+				}
+
+				/*	$	MESSEGES	$	*/
+					/*HTML*/
+					#MSG_html-css{
+						display: none;
+						/*display: block;*/
+						margin-top: -100%;
+						position: relative;
+						top: -26px;
+						left: 60%;
+						/*width: 10%;*/
+						background-color: grey;
+						color: white;
+						border: 4px solid darkgreen;
+						border-radius: 25px;
+						padding: 5px;
+					}
+					#MSG_html-css p{
+						margin: 0;
+					}
+						#html-css :hover +#MSG_html-css{
+							display: inline-block;
+						}
+					/*CSS*/
+					#MSG_RWD{
+						display: none;
+						/*display: block;*/
+						margin-top: -100%;
+						position: relative;
+						top: -25px;
+						left: -60%;
+						/*width: 10%;*/
+						background-color: grey;
+						color: white;
+						border: 4px solid darkgreen;
+						border-radius: 25px;
+						padding: 5px;
+					}
+					#MSG_RWD p{
+						margin: 0;
+					}
+						#css :hover +#MSG_RWD{
+							display: inline-block;
+						}
+					/*JAVASCRIPT*/
+					#MSG_java{
+						display: none;
+						/*display: block;*/
+						margin-top: -100%;
+						position: relative;
+						top: -35px;
+						left: -60%;
+						/*width: 10%;*/
+						background-color: grey;
+						color: white;
+						border: 4px solid darkgreen;
+						border-radius: 25px;
+						padding: 5px;
+					}
+					#MSG_java p{
+						margin: 0;
+					}
+						#java :hover +#MSG_java{
+							display: inline-block;
+						}
+					/*MEAN*/
+					#MSG_MEAN{
+						display: none;
+						/*display: block;*/
+						margin-top: -100%;
+						position: relative;
+						top: -50px;
+						left: -60%;
+						/*width: 10%;*/
+						background-color: grey;
+						color: white;
+						border: 4px solid darkgreen;
+						border-radius: 25px;
+						padding: 5px;
+					}
+					#MSG_MEAN p{
+						margin: 0;
+					}
+						#MEAN :hover +#MSG_MEAN{
+							display: inline-block;
+						}
+					/*PYTHON*/
+					#MSG_PY{
+						display: none;
+						/*display: block;*/
+						margin-top: -100%;
+						position: relative;
+						top: -50px;
+						left: 60%;
+						/*width: 10%;*/
+						background-color: grey;
+						color: white;
+						border: 4px solid darkgreen;
+						border-radius: 25px;
+						padding: 5px;
+					}
+					#MSG_PY p{
+						margin: 0;
+					}
+						#PY :hover +#MSG_PY{
+							display: inline-block;
+						}
+					/*DJANGO*/
+					#MSG_django{
+						display: none;
+						/*display: block;*/
+						margin-top: -100%;
+						position: relative;
+						top: -50px;
+						left: -60%;
+						/*width: 10%;*/
+						background-color: grey;
+						color: white;
+						border: 4px solid darkgreen;
+						border-radius: 25px;
+						padding: 5px;
+					}
+					#MSG_django p{
+						margin: 0;
+					}
+						#django :hover +#MSG_django{
+							display: inline-block;
+						}
+					/*FLASK*/
+					#MSG_flask{
+						display: none;
+						/*display: block;*/
+						margin-top: -100%;
+						position: relative;
+						top: -50px;
+						left: -60%;
+						/*width: 10%;*/
+						background-color: grey;
+						color: white;
+						border: 4px solid darkgreen;
+						border-radius: 25px;
+						padding: 5px;
+					}
+					#MSG_flask p{
+						margin: 0;
+					}
+						#flask :hover +#MSG_flask{
+							display: inline-block;
+						}
+					/*RUBY*/
+					#MSG_ruby{
+						display: none;
+						/*display: block;*/
+						margin-top: -100%;
+						position: relative;
+						top: -50px;
+						left: -60%;
+						/*width: 10%;*/
+						background-color: grey;
+						color: white;
+						border: 4px solid darkgreen;
+						border-radius: 25px;
+						padding: 5px;
+					}
+					#MSG_ruby p{
+						margin: 0;
+					}
+						#ruby :hover +#MSG_ruby{
+							display: inline-block;
+						}
+				/*	$	MESSEGES ENDs	$	*/
+
+		/*	$	INTRO ENDs	$	*/
+
+
+		/*	$	PROJECTs	$	*/
+		#projects{
+			text-align: center;
+			margin-top: -50px;
+		}
+		#projects h1{
+			margin: 0;
+			text-align: center;
+			text-decoration: underline;
+		}
+		#projects h3{
+			margin: 0;
+			font-size: 22px;
+			color: darkblue;
+		}
+		#projects p{
+			margin: 0;
+			text-align: center;
+			padding-bottom: 0;
+		}
+
+			/*	$	WEBSITES	$	*/
+			.sites{
+				text-align: center;
+				vertical-align: top;
+				display: inline-block;
+				width: 35%;
+				padding-top: 0;
+				background-color: rgba(153, 213, 255, 0.6);
+				border: 5px solid black;
+				padding: 2%;
+
+			}
+			.sites h2{
+				margin: 0;
+			}
+			.sites img{
+				width: 100%;
+				display: inline-block;
+				border: 2px solid black;
+			}
+			.sites h4{
+				margin-bottom: 0;
+			}
+			/*	$	WEBSITES ENDs	$	*/
+
+		/*	$	PROJECTs ENDs	$	*/
+
+		/*	$	CONTACT INFO	$	*/
+		#contME{
+			text-align: center;
+		}
+		#me{
+			width: 25%;
+			display: inline-block;
+			border: 5px solid #003c66;
+			border-radius: 25px;
+			margin-right: 10px; 
+		}
+		#contact{
+			padding: 5px;
+			width: 30%;
+			display: inline-block;
+		}
+		#contact img{
+			width: 27%;
+		}
+		#contact h2{
+			vertical-align: 150%;
+		}
+		/*	$	CONTACT INFO ENDs	$	*/
+
+/*	$	WRAPPER ENDs	$	*/

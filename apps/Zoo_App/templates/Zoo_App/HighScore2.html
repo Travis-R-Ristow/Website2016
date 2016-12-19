@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Game Over</title>
+</head>
+<body>
+		<div id="HighScore" style="text-align:center;margin-top:5%;background-color:lightblue;">
+		<h1 style="font-size:25px;">HIGHSCORE</h1>
+			<h1 style="border-right:4px solid black; margin-right: 10px; color:darkgreen; text-shadow: 1px 1px gold;">{{request.session.highscore2}}</h1>
+		<h1 style="font-size:25px;">Your Score</h1>
+			<h1>{{request.session.score}}</h1>
+		</div>
+		<a href="/reset1"><div style="margin:auto;padding:10px;width:80%;text-align:center;background-color:green;color:white;border-radius:40px;">
+			<h1>Play Again</h1>
+		</div></a>
+		<br>
+		<a href="/"><div style="margin:auto;padding:10px;width:50%;text-align:center;background-color:red;color:white;border-radius:40px;">
+			<h1>Back to Website</h1>
+		</div></a>
+</body>
+</html>

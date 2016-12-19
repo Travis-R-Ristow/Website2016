@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>☺Money Game☺</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'Zoo_App/index2.css' %}" media="screen" title="no title"  charset="utf-8">
+</head>
+<body>
+	<div id="highscore">
+		<h2>HighScore:</h2>
+		<h2>Your Score:</h2><br>
+		<h3 style="float: none; margin-left: 100px;">{{request.session.highscore2}}</h3>
+		<h3 style="margin-right: 50px;">{{request.session.score}}</h3>
+	</div>
+
+	<div id="total">
+		<h1>$ {{ request.session.money }} </h1>
+	</div>
+
+
+	<div id="store">
+		<h1>Upgrades:</h1>
+		<h2>> Get Better Product</h2><br>
+			<p class="red">Costs: ${{request.session.store}}</p><br>
+			<p class="blue">${{request.session.stupid}} + Worth</p>
+				<form action="/store" method="POST">
+				{% csrf_token %}
+				<input type="submit" value="Improve Product" name=""></form>
+				<hr>
+		<h2>> Hire SalesMen</h2><br>
+			<p class="red">Costs: ${{request.session.men}}</p><br>
+			<p class="blue">Adds $1 - $25 perEmployee</p><br>
+			<p class="red">Costs: $2 perClick</p>
+				<form action="/men" method="POST">
+				{% csrf_token %}
+				<input type="submit" value="Hire SalesMen" name=""></form>
+				<hr>
+		<h2>> Open Store</h2><br>
+			<p class="red">Costs: ${{request.session.betterPro}}</p><br>
+			<p class="blue">Doubles Worth:</p>
+				<form action="/betterPro" method="POST">
+				{% csrf_token %}
+				<input type="submit" value="Open Store" name=""></form>
+				<hr>
+	</div>
+
+	<form id="reset" action="/reset"  method="POST">
+		{% csrf_token %}
+		<input type="submit" name="reset" value="Reset">
+	</form>
+
+	<div id="left">
+		<h1>Clicks Left:  {{ request.session.clicks }}</h1>
+	</div>
+
+
+	<div id="status">
+		<h1>Status:</h1>
+			<h2>Employies: {{request.session.countMEN}}</h2>
+			<h2>Stores: {{request.session.countSTORE}}</h2>
+			<h2>Product Level: {{request.session.countPRO}}</h2>
+			<h2>Upgrade: ____</h2>
+	</div>
+	<div id="click">
+		<form action="/click2" method="POST">
+		<h1 style="margin: 0;">{{request.session.hello |safe}}</h1>
+		{% csrf_token %}
+		<input type="image" src="{%static 'Money_Game_App/click.png'%}" name="click" value="">
+		<h1 style="margin-bottom: 0;">Worth: ${{request.session.z}}</h1><br>
+		<h2 style="margin-top: 0; margin-bottom: 0;">Plus {{request.session.luck}} from Employies</h2><br>
+		</form>
+		<form id='fire' action="/fire" method="POST">
+		{% csrf_token %}
+		<input type="submit" name="fire" value="Fire Employee">
+		</form>
+	</div>
+	<div id="back"><a href="/">
+		<h1>Back</h1>
+	</a></div>
+</body>
+</html>
